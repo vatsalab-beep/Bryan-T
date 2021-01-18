@@ -1,83 +1,71 @@
+
 <!DOCTYPE html>
 <html>
 
   <head>
-  <meta charset="utf-8">
-  <title>Bryan Tam</title>
-  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href = "css/styles.css">
-      <script src="https://kit.fontawesome.com/e73c5a36d4.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <title>Bryan Tam</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href = "css/styles.css">
+        <script src="https://kit.fontawesome.com/e73c5a36d4.js" crossorigin="anonymous"></script> <!-- Font awesome link-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body >
-    <nav id = "navbar">
+</head>
+<body>
 
+    <nav class = "navbar" style = "top: 0px;">
+    
+        <ul class = "navlinks">
       
-     
-      <ul class = "navlinks">
+            <li> <a href = "index.html">About </a></li>
+            <li> <a href = "portfolio.html" >Portfolio </a></li>
+            <li> <a href = "contact.html" >Contact </a></li>
+            
+            <li> <a href = "https://www.instagram.com/so_theweather/" target = "_blank" ><i class="fab fa-instagram"></i></a></li>
+            <li> <a href = "https://twitter.com/so_theweather" target = "_blank" ><i class="fab fa-twitter"></i></a></li>
        
-        
-       
-          <li> <a href = "#about">About </a></li>
-          <li> <a href = "portfolio.html" >Portfolio </a></li>
-          <li> <a href = "contact.html" >Contact </a></li>
-          
-          <li> <a href = "https://www.instagram.com/so_theweather/" target = "_blank" ><i class="fab fa-instagram"></i></a></li>
-          <li> <a href = "https://twitter.com/so_theweather" target = "_blank" ><i class="fab fa-twitter"></i></a></li>
-         
-        
-
+        </ul>
  
-      </ul>
-      
-
     </nav>
-    
-    <div class = "firstdiv">
- 
-  
- 
-      <h1  id = "it" class = "introtext"></h1>
-    
-      <img src = "bryan.png">
- 
+    <div class="container" style = "padding-top: 30px;">
+        <div class = "formof"> 
+            <form action="action_page.php" method = "post">
+                <h2 class = "formwords"> Let's Get in Touch!</h2>
 
-        
-        
+                <div class="formpart"> 
 
-        <!--<img class = "bryanimage" src = "imgbry.png" alt = "Image of myself"> -->
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                </div>
+
+                <div class="formpart"> 
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                </div>
+
+                <div class="formpart">
+                <label for="Email">Email</label>
+                <input type = "text" id="email" name="email" placeholder="example@gmail.com">
+            
+                </div>
+                <div class="formpart"> 
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+                </div>
+                <div class="formpart"> 
+                <label for="Message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
     </div>
-
     
-    <div id = "about" class = "aboutdiv">
 
-  
-        <img class = "bryanimage" src = "Screen Shot 2021-01-11 at 12.53.25 PM.png">
-
-        <div class = "bodytext"> 
-        <h1> I'm a freelance photographer and videographer based in New Jersey, USA.</h1>
-
-        <p> I started photography and videography as a hobby in June 2019.
-        As I learned and grew as a creator, that quickly led to commissions from friends at a local small business.   
-        I love capturing a feeling and telling more about a subject through photo and video. </p> 
-        <p> I started photography and videography as a hobby in June 2019.
-          As I learned and grew as a creator, that quickly led to commissions from friends at a local small business.   
-          I love capturing a feeling and telling more about a subject through photo and video. </p> 
-       
-        </div>
+      <input class = "submitbutton" type="submit" value="Submit">
+   
+    </form>
     </div>
-  
-
-
-    
-
-    <script src="index.js" charset="utf-8"> </script>
-
+  </div>
 
   </body>
-
- 
   </html>
