@@ -1,0 +1,649 @@
+/******************************************************** Main text **********************************************************/
+h1 /*used as heading in about page*/{
+
+   font-size: 30px;
+    color:black;
+    text-align: left;
+    font-family:'Oswald', sans-serif;
+    margin-left:20px;
+    margin-right:15px;
+    padding-top:20px;
+   
+
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+p/*used as textin about page*/{
+
+
+    padding-left: 20px;
+    padding-right: 15px;
+font-size: 18px;
+text-align: left;
+    padding-top:10px;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+body{
+
+margin:0;
+    padding:0;
+    
+}
+h2{
+    font-size: 20px;
+    color:rgb(248, 248, 248);
+    text-align: left;
+    font-family:'Oswald', sans-serif;
+    margin-left:20px;
+    margin-right:auto;
+}
+
+ /******************************************************** Navbar **********************************************************/
+
+ nav{
+    display:flex;
+
+    margin-top: 0;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+    
+}
+
+.navlinks{
+
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    padding:0;
+
+}
+.navlinks li{
+
+    list-style:none;
+
+}
+.navlinks a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color:white;
+
+}
+
+
+.logo{
+
+width:10%;
+padding-left: 13px;  
+}
+.logoimage{
+
+    width:80%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.fab {
+
+    color:white;
+    size:6px;
+
+}
+nav.scroll {
+    background-color: #000000;
+
+  }
+
+
+/********************************************************  Home Page **********************************************************/
+
+.firstdiv{
+
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+overflow-x:hidden;
+}
+
+.firstdiv > img {
+
+    margin-left: 35px;
+    margin-right: 0;
+    width:80%;
+    height: 80%;
+}
+
+.introtext{
+   padding-top:100px;
+   padding-bottom: 30px;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.introtextsub{
+    padding-left: 20px;
+    padding-right: 20px;
+font-size: 20px;
+text-align: center;
+
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/******************************************************** About Page **********************************************************/
+
+.bodytext{
+
+
+    opacity:0;
+    transform: translateY(20px);
+    transition: 2s all ease-in-out;
+}
+
+.bodytextappear{
+
+    opacity:1;
+    transform: translateY(0px);
+}
+.aboutdiv{
+
+
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+    margin:0;
+    padding-top:20px;
+
+}
+.bryanimage{
+
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width:80%;
+     height:50%;
+     margin-top:30px;
+     border-radius: 25px;
+     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+ 
+ }
+ /******************************************************** Portfolio Page **********************************************************/
+
+.portfoliodiv{
+
+    background-color:#121212 ;
+    margin:0;
+    overflow-x: hidden;
+  
+
+}
+.heading{
+
+    font-size: 30px;
+    color:rgb(248, 248, 248);
+    text-align: left;
+    font-family:'Oswald', sans-serif;
+    margin-left:20px;
+    margin-right:15px;
+    margin-top: 40px;
+ 
+
+} 
+
+/******************* People Images *****************/
+.pplimagesdiv{
+   
+    display:grid;
+
+    grid-template-columns: repeat(4, 1fr);
+   /* grid-template-rows:  minmax(75px, auto); */
+    margin-left: 15px;
+    margin-right:15px;
+    grid-gap: 20px;
+   
+    
+    
+}
+.pplimagesdiv > div > img{
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px  rgba(255, 255, 255, 0.12), 0 2px 4px  rgb(255, 255, 255,0.12);
+}
+
+
+
+/******************* Product Images *****************/
+
+.productimagesdiv {
+
+
+    display:grid;
+
+    grid-template-columns: repeat(4, 1fr);
+   /* grid-template-rows:  minmax(75px, auto); */
+    margin-left: 15px;
+    margin-right:15px;
+    grid-gap: 20px;
+   
+
+}
+
+.productimagesdiv > div > img{
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px  rgba(255, 255, 255, 0.12), 0 2px 4px  rgb(255, 255, 255,0.12);
+}
+.image1 {
+
+    grid-column-start: 1;
+    grid-column-end:3;
+  
+}
+.image2{
+    grid-column-start: 3;
+    grid-column-end:5;
+
+
+}
+
+.image5{
+    grid-column-start: 3;
+    grid-column-end:5;
+
+
+}
+
+iframe {
+
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow-x: hidden;
+    border-width: 3px;
+    margin-bottom: 20px;
+
+
+}
+/******************************************************** Contact Page **********************************************************/
+
+
+input[type=text], select, textarea{
+
+    font-family: 'Montserrat', sans-serif;
+    padding: 1px; /* Some padding */ 
+  border: 1px solid rgb(179, 179, 179); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  display:block;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px;
+  resize: vertical;
+  width: 100%;
+  
+
+ 
+}
+
+.container{
+
+
+    width: 100%;
+  height: 110vh;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #121212;
+   
+
+ 
+}
+
+.formof{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding:20px;
+    padding-top: 8px;
+    width:70%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    
+  
+
+}
+.formpart{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(71, 71, 71);
+    
+}
+
+ .submitbutton{
+
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100%;
+
+
+}
+.formwords{
+
+    font-size: 30px;
+    color:rgb(71, 71, 71);
+    margin-left:0px;
+    font-family:'Oswald', sans-serif;
+   
+  
+}
+
+ @media only screen and (min-width: 768px) {
+   
+   
+        h1 /*used as heading in about page*/{
+
+            font-size: 30px;
+            color:black;
+           padding-top:50px;
+            font-family:'Oswald', sans-serif;
+           
+        
+        }
+        p/*used as textin about page*/{
+        
+        padding:0;
+            font-size: 18px;
+            color:black;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        h2{
+            font-size: 27px;
+            color:rgb(248, 248, 248);
+            text-align: left;
+            font-family:'Oswald', sans-serif;
+            margin-left:100px;
+            margin-bottom: 40px;
+          
+            
+        
+        
+        }
+
+    /********************************************************  Home Page **********************************************************/
+    
+    .firstdiv > img {
+        margin-bottom: 0;
+        width:40%;
+        height:40%;
+        float:right;
+        margin-top:100px;
+    
+
+    }
+    
+    .introtext{
+       padding-top:250px;
+
+        font-size: 80px;
+        color:white;
+     text-align: center;
+     margin-bottom: 0;
+        font-family: 'Oswald', sans-serif;
+        margin:0;
+        float:left;
+        margin-left: 200px;
+    
+    }
+    
+    
+    .introtextsub{
+        padding-left: 20px;
+        padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    
+        color:white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+     
+    
+
+    /******************************************************** About Page **********************************************************/
+
+
+    .aboutdiv{
+    
+    
+        background-color: rgb(245, 245, 245);
+        overflow-x: hidden;
+        margin:0;
+        padding:80px;
+    
+    }
+
+
+    .bryanimage{
+    
+       float: left;
+        margin-right: 140px;
+         width:25%;
+         height:25%;
+         border-radius: 25px;
+         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  }
+
+  /******************************************************** Portfolio Page **********************************************************/
+
+.portfoliodiv{
+
+    background-color:#121212 ;
+    margin:0;
+    overflow-x: hidden;
+
+}
+.heading{
+
+    font-size: 40px;
+    color:rgb(248, 248, 248);
+    text-align: left;
+    font-family:'Oswald', sans-serif;
+    margin-left:100px;
+
+    margin-top: 40px;
+ 
+
+} 
+
+.pplimagesdiv{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  minmax(75px, 350px);
+    margin-left: 100px;
+    margin-right:100px;
+    grid-gap: 25px;
+
+   
+
+}
+
+.image1 {
+
+    grid-column-start: 1;
+    grid-column-end:3;
+  
+}
+.image2{
+    grid-column-start: 3;
+    grid-column-end:5;
+
+
+}
+
+.image5{
+    grid-column-start: 3;
+    grid-column-end:5;
+
+
+}
+
+
+.pplimagesdiv > div > img {
+
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 1.5px 4px  rgba(255, 255, 255, 0.12), 0 1.5px 4px  rgb(255, 255, 255,0.12);
+    
+}
+
+
+.productimagesdiv > div > img{
+   
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px  rgba(255, 255, 255, 0.12), 0 2px 4px  rgb(255, 255, 255,0.12);
+
+
+}
+
+.productimagesdiv {
+
+
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  minmax(75px, 350px);
+    margin-left: 100px;
+    margin-right:100px;
+    grid-gap: 25px;
+
+}
+
+iframe {
+
+    width: 500px;
+    height:270px;
+
+    border-radius: 10px;
+    overflow-x: hidden;
+    border-width: 1px;
+    margin-bottom: 70px;
+
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 150px;
+    margin-top: 30px;
+
+
+
+}
+/******************************************************** Contact Page **********************************************************/
+
+
+
+.container{
+
+
+    width: 100%;
+  height: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #121212;
+}
+
+.formof{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding:20px;
+    padding-top: 10px;
+    margin-top:70px;
+    margin-bottom:70px;
+    width:60%;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.12), 0 1px 4px rgba(255, 255, 255, 0.24);
+
+    
+  
+
+}
+.formpart{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(71, 71, 71);
+    
+}
+
+ .submitbutton{
+
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100%;
+
+
+}
+.formwords{
+
+    font-size: 30px;
+    color:rgb(71, 71, 71);
+    margin-left:0px;
+    font-family:'Oswald', sans-serif;
+   
+  
+}
+
+
+
+
+
+
+ }
+
+
