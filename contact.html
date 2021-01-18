@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <nav class = "navbar" style = "top: 0px;">
+    <nav style = "background-color: #121212;">
     
         <ul class = "navlinks">
       
@@ -31,7 +31,7 @@
     </nav>
     <div class="container" style = "padding-top: 30px;">
         <div class = "formof"> 
-            <form action="action_page.php" method = "post">
+            <form action="contactform.php" method = "post">
                 <h2 class = "formwords"> Let's Get in Touch!</h2>
 
                 <div class="formpart"> 
@@ -51,14 +51,17 @@
             
                 </div>
                 <div class="formpart"> 
+
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+                <textarea id = "text" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
                 </div>
                 <div class="formpart"> 
-                <label for="Message">Message</label>
-                <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
 
-    </div>
+                        <label for="Message">Message</label>
+                        <textarea id = "message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+            </div>
     
 
       <input class = "submitbutton" type="submit" value="Submit">
@@ -66,6 +69,8 @@
     </form>
     </div>
   </div>
+
+  <script src="index.js" charset="utf-8"> </script>
 
   </body>
   </html>
